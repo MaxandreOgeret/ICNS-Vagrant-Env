@@ -1,0 +1,6 @@
+.vagrant
+desktop.ini
+installer/*
+!installer/.gitkeep
+learning/*
+!learning/.gitkeep
