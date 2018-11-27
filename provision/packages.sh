@@ -11,3 +11,10 @@ $HOME/anaconda/bin/pip install tensorflow
 # Updating pandas and matplotlib
 $HOME/anaconda/bin/pip install -U pandas
 $HOME/anaconda/bin/pip install -U matplotlib 
+
+# Installing Git and tensorflow models
+sudo apt-get install -y git
+cd ~
+git clone https://github.com/tensorflow/models.git
+
+$HOME/anaconda/bin/python $HOME/models/research/setup.py install

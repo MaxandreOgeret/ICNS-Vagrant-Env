@@ -20,8 +20,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #config.vm.provision "shell", privileged: false, path: "vagrant-bootstrap.sh"
   # You can do multiple scripts, if you want:
   config.vm.provision "shell", privileged: false, path: "provision/provision.sh"
+  config.vm.provision "shell", privileged: false, path: "provision/packages.sh"
   config.vm.provision "shell", privileged: false, path: "provision/startup.sh", run: 'always'
-  config.vm.provision "shell", privileged: false, path: "provision/packages.sh", run: 'always'
 
   # Port forwarding examples
   # Just in case you need to run a database server, web server, etc.

@@ -28,10 +28,3 @@ echo "alias python='$HOME/anaconda/bin/python'" >> /home/vagrant/.bashrc
 echo "alias conda='$HOME/anaconda/bin/conda'" >> /home/vagrant/.bashrc
 echo "alias pip='$HOME/anaconda/bin/pip'" >> /home/vagrant/.bashrc
 #echo "source $HOME/anaconda/bin/activate" >> /home/vagrant/.bashrc
-echo "export PYTHONPATH=:/home/vagrant/models/research:/home/vagrant/models/research/slim:/home/vagrant/models/research:/home/vagrant/models/research/slim" >> /home/vagrant/.bashrc
-
-
-# Installing Git and tensorflow models
-sudo apt-get install -y git
-cd ~
-git clone https://github.com/tensorflow/models.git
